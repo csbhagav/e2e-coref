@@ -10,3 +10,4 @@ glove*.txt.filtered
 *.hdf5
 .python-version
 data/
+.idea/
