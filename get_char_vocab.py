@@ -34,7 +34,7 @@ def main(dataset):
         get_char_vocab_language("chinese")
         get_char_vocab_language("arabic")
     elif dataset == "wsc":
-        get_char_vocab(["data/train.coref_format.jsonl", "data/dev.coref_format.jsonl"])
+        get_char_vocab(["data/train.coref_format.jsonl", "data/dev.coref_format.jsonl"], "char_vocab.wsc.txt")
     else:
         assert False
 
