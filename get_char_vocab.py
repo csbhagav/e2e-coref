@@ -16,7 +16,7 @@ def get_char_vocab(input_filenames, output_filename):
                     for word in sentence:
                         vocab.update(word)
     vocab = sorted(list(vocab))
-    with open(output_filename, "w") as f:
+    with open(output_filename, "wb") as f:
         for char in vocab:
             f.write(u"{}\n".format(char).encode("utf8"))
     print("Wrote {} characters to {}".format(len(vocab), output_filename))
